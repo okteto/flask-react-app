@@ -1,0 +1,18 @@
+
+services:
+  api:
+    build:  ./api
+    ports: 
+    - "90:5000"
+    volumes: 
+    - ./api:/api
+    environment: 
+      FLASK_ENV: development
+  web:
+    build: ./frontend
+    ports: 
+      - "8080:8080"
+    volumes: 
+      - ./frontend:/user/src/app
+    depends_on: 
+      - api
