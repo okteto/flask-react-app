@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { TodoPage } from "./components/TodoList";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Detail } from "./components/detailView";
+// import { Form } from './components/form';
 
 function App() {
-  const [currentDateTime, setCurrentDateTime] = useState(0);
-  const url = '/datetime' 
-  useEffect(() => {
-    fetch(url).then(res => res.json()).then(data => {
-      setCurrentDateTime(data.datetime);
-    });
-  }, []);
-
   return (
     <div className="App">
       <header className="App-header">
-<h3>
-  The date and time is {currentDateTime}
- 
-</h3>
-<p> Testing okteto</p>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <TodoPage />
+            </Route>
+            <Route path="/:id">
+              <Detail />
+            </Route>
+          </Switch>
+        </Router>
       </header>
-        
     </div>
   );
 }
