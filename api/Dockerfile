@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM python:3.8.2
 
 WORKDIR /api
  
@@ -12,4 +12,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "datetime_api.py" ]
+CMD [ "python", "todo_list_api.py" ]
