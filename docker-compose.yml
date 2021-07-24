@@ -3,7 +3,7 @@ services:
   api:
     build:  ./api
     ports: 
-    - "90:5000"
+    - "5000:5000"
     volumes: 
     - ./api:/api
     environment: 

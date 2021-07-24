@@ -15,7 +15,6 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "homepage": "https://web-khabdrick.cloud.okteto.net",
     "start": "PORT=8080 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

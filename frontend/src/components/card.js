@@ -11,7 +11,7 @@ export const Card = ({ listOfTodos }) => {
           <ul key={todo.id}>
               
 
-            <li><Link to={`${todo.id}`}>{todo.detail}</Link></li>
+            <li className="links"><Link to={`${todo.id}`}>{todo.detail}</Link></li>
           </ul>
         );
       })}

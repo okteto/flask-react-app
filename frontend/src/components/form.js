@@ -15,9 +15,10 @@ export const Form = ({input, onFormChange, onFormSubmit}) => {
     return(
         <>
         <form onSubmit={handleSubmit}>
-            <input type='text' required value={input} onChange={handleChange}></input>
-            <input type='submit'></input>
+            <input className='form-class' type='text' required value={input} onChange={handleChange}></input>
+            <input  type='submit'></input>
         </form>
+        <br/>
         </>
     )
 }
