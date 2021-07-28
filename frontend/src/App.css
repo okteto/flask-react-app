@@ -1,0 +1,26 @@
+
+*{
+    text-decoration: none;
+} 
+
+body {
+  font-size: 1.6rem; 
+  background-color: #efefef;
+  color: #324047
+}
+
+
+.App-header{
+padding-left: 500px;
+}
+
+.form-class{
+margin-top: 100px;
+}
+
+.links{
+  position: relative;
+  list-style-type: square;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}

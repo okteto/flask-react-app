@@ -1,0 +1,7 @@
+name: web
+command: bash
+sync:
+- .:/user/src/app
+forward:
+- 9229:9229
+- 8080:8080
